@@ -384,6 +384,7 @@
 "Assets/BounceGame/GameManager.cs"
 "Assets/BounceGame/Goal.cs"
 "Assets/BounceGame/Paddle.cs"
+"Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/Controllers/PlayerInputController.cs"
 "Assets/Scripts/Controllers/TopDownCharacterController.cs"
 "Assets/Scripts/Entities/TopDownAimRotation.cs"

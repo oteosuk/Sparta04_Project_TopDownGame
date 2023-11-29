@@ -62,6 +62,7 @@
     <Compile Include="Assets\BounceGame\Paddle.cs" />
     <Compile Include="Assets\Scripts\Entities\TopDownMovement.cs" />
     <Compile Include="Assets\BounceGame\Goal.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\BounceGame\Ball.cs" />
     <Compile Include="Assets\Scripts\Entities\TopDownAimRotation.cs" />
     <Compile Include="Assets\Scripts\Entities\TopDownShooting.cs" />
