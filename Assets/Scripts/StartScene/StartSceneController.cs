@@ -1,15 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class StartSceneController : MonoBehaviour
 {
-    public InputField nameInputField;
+    public TMP_InputField nameInputField;
     public Button joinButton;
 
     private void Start()
     {
-        // ¹öÆ° Å¬¸¯ ÀÌº¥Æ®¿¡ ÇÔ¼ö¸¦ ¿¬°á
+        // ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸ì— í•¨ìˆ˜ë¥¼ ì—°ê²°
         joinButton.onClick.AddListener(OnJoinButtonClick);
     }
 
@@ -17,16 +18,16 @@ public class StartSceneController : MonoBehaviour
     {
         string playerName = nameInputField.text;
 
-        // ÀÌ¸§ÀÇ ±æÀÌ°¡ 2¿¡¼­ 10 »çÀÌÀÎÁö È®ÀÎ
+        // ì´ë¦„ì˜ ê¸¸ì´ê°€ 2ì—ì„œ 10 ì‚¬ì´ì¸ì§€ í™•ì¸
         if (playerName.Length >= 2 && playerName.Length <= 10)
         {
-            // ÀÌ¸§ÀÌ Á¶°ÇÀ» ¸¸Á·ÇÏ¸é ´ÙÀ½ ¾ÀÀ¸·Î ÀÌµ¿
-            PlayerPrefs.SetString("PlayerName", playerName); // ÇÃ·¹ÀÌ¾î ÀÌ¸§À» ÀúÀå
-            SceneManager.LoadScene("NextScene"); // ´ÙÀ½ ¾ÀÀ¸·Î ÀÌµ¿
+            // ì´ë¦„ì´ ì¡°ê±´ì„ ë§Œì¡±í•˜ë©´ ë‹¤ìŒ ì”¬ìœ¼ë¡œ ì´ë™
+            PlayerPrefs.SetString("PlayerName", playerName); // í”Œë ˆì´ì–´ ì´ë¦„ì„ ì €ìž¥
+            SceneManager.LoadScene("NextScene"); // ë‹¤ìŒ ì”¬ìœ¼ë¡œ ì´ë™
         }
         else
         {
-            Debug.Log("ÀÌ¸§Àº 2¿¡¼­ 10±ÛÀÚ »çÀÌ¾î¾ß ÇÕ´Ï´Ù.");
+            Debug.Log("ì´ë¦„ì€ 2ì—ì„œ 10ê¸€ìž ì‚¬ì´ì–´ì•¼ í•©ë‹ˆë‹¤.");
         }
     }
 }
